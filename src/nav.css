@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav div {
+  color: greenyellow;
+  font-size: 32px;
+}
+
+.x {
+  color: orange;
+  font-weight: bold;
+}
+
+.o {
+  color: cyan;
+  font-weight: bold;
+}

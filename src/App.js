@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Nav from "./Nav"
+import Game from "./Game"
 
 function App() {
+    const [xScore, setXScore] = useState(0)
+    const [oScore, setOScore] = useState(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav xScore={xScore} setXScore={setXScore} oScore={oScore} setOScore={setOScore}></Nav>
+      <Game xScore={xScore} setXScore={setXScore} oScore={oScore} setOScore={setOScore}></Game>
     </div>
   );
 }
