@@ -8,9 +8,18 @@
 
 .cell {
   color: cyan;
-  font-size: 128px;
+  font-size: 12rem;
 }
 
 .X {
   color: orange;
+}
+
+@media only screen and (max-width: 900px) {
+  .all-cells {
+    grid-template-rows: repeat(3, 33vw);
+  }
+  .cell {
+    font-size: 20vw;
+  }
 }
