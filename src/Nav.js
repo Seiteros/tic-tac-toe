@@ -6,7 +6,7 @@ const Nav = (props) => {
     return(
         <nav>
             <div>Tic Tac Toe</div>
-            <div>Score:<br></br> X: <span className='x'>{props.xScore}</span> O: <span className='o'>{props.oScore}</span> </div>
+            <div>Score: X: <span className='x'>{props.xScore}</span> O: <span className='o'>{props.oScore}</span> </div>
         </nav>
     )
 }
